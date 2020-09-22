@@ -27,7 +27,7 @@
   margin-bottom: 2rem;
 
   padding: 1rem;
-
+/*
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   position: relative;
@@ -37,7 +37,7 @@
   transition-duration: 0.3s;
   -webkit-transition-property: transform;
   transition-property: transform;
-
+*/
   > hr {
     margin-right: 0;
     margin-left: 0;
@@ -58,7 +58,7 @@
     }
   }
 }
-
+/*
 .card:hover, .card:focus, .card:active {
   -webkit-transform: scale(1.03);
   transform: scale(1.03);
@@ -83,7 +83,7 @@
 .card:hover:before, .card:focus:before, .card:active:before {
   left: 0;
   right: 0;
-}
+} */
 
 .card-body {
   // Enable `flex-grow: 1` for decks and groups so that card blocks take up
@@ -207,7 +207,7 @@
   .card {
     margin-bottom: $card-deck-margin;
   }
-
+/*
   @include media-breakpoint-up(sm) {
     display: flex;
     flex-flow: row wrap;
@@ -221,7 +221,7 @@
       margin-bottom: 0; // Override the default
       margin-left: $card-deck-margin;
     }
-  }
+  }*/
 }
 
 

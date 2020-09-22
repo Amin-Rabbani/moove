@@ -19,6 +19,8 @@
   @include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-line-height, $btn-border-radius);
   @include transition($btn-transition);
 
+  border-radius: 5rem;
+
   @include hover() {
     color: $body-color;
     text-decoration: none;
@@ -72,6 +74,7 @@ fieldset:disabled a.btn {
 @each $color, $value in $theme-colors {
   .btn-outline-#{$color} {
     @include button-outline-variant($value);
+    border-radius: 5rem;
   }
 }
 
@@ -137,6 +140,7 @@ fieldset:disabled a.btn {
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
+  border-radius: 5rem;
   &.btn-block {
     width: 100%;
   }

@@ -26,7 +26,10 @@
     }
 }}
 <div class="card-body">
-    <h3>{{#str}}platform_access, theme_moove{{/str}}</h3>
+    <center>
+        <img src="{{output.get_logo}}" alt="{{sitename}}">
+    </center>
+    <h3>سامانه آموزشی سما</h3>
     <form class="signup-form" action="{{{ config.wwwroot }}}/login/index.php" method="POST" role="form">
         <input type="hidden" name="logintoken" value="{{logintoken}}">
         <label for="username">
@@ -49,7 +52,7 @@
         </div>
 
         <div class="sign-up-btn">
-            <button type="submit" class="btn btn-primary">{{#str}}login{{/str}}</button>
+            <button type="submit" class="btn btn-primary btn-block">{{#str}}login{{/str}}</button>
         </div>
     </form>
 
@@ -74,13 +77,4 @@
     {{#cansignup}}
         <a class="btn btn-register btn-primary" href="{{{ config.wwwroot }}}/login/signup.php?">{{#str}}newaccount{{/str}}</a>
     {{/cansignup}}
-
-    {{#canloginasguest}}
-        <form action="{{{ config.wwwroot }}}/login/index.php" method="post" id="guestlogin">
-            <input type="hidden" name="username" value="guest" />
-            <input type="hidden" name="password" value="guest" />
-            <input type="hidden" name="logintoken" value="{{logintoken}}">
-            <button class="btn btn-default btn-block mt-2" type="submit">{{#str}}loginguest{{/str}}</button>
-        </form>
-    {{/canloginasguest}}
 </div>
